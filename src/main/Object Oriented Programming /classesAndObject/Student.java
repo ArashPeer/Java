@@ -11,6 +11,7 @@ public class Student { // a class in java has attributes = "properties"  and beh
         this.address = address;
         //a constructor is a special type of method to initialize any classes object.
     }
+    //Here are we are modifying the object
     public void setName(String name){
         this.name = name;
     }
@@ -20,6 +21,7 @@ public class Student { // a class in java has attributes = "properties"  and beh
     public void setAddress(String address){
         this.address = address;
     }
+    //we use getter to retrive those modifed attributes
     public String getName(){
         return name;
     }
@@ -33,6 +35,8 @@ public class Student { // a class in java has attributes = "properties"  and beh
     public String toString(){
         return ("Student name is "+this.getName() + ", age is: " + this.getAge() + ", and Address "+ this.getAddress());
     }
+
+    //main method where we can execute out code with calling the constructor. 
 
     public static void main(String[] args) {
         Student darya = new Student("Darya", 25, "2330 Austin Highway");
