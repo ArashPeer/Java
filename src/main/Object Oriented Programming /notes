@@ -1,0 +1,126 @@
+Agenda for Object Oriented Programming Concepts will be covered in this package
+
+1- Classes And Object..
+A class is a blueprint of an Object, What is Object? it is an instance of the class
+
+3- What is this keyword? it is a reference variable that refers to the current object,
+it is to differentiate instance variable form the local variable.
+
+2- Access Modifiers..
+Modifier    Class       Package     Subclass        world
+public      Yes         Yes         Yes             Yes
+protected   Yes         Yes         Yes             No
+no modifier Yes         Yes         No              No
+private     Yes         No          No              No
+
+
+
+3- Inheritance and Protected Access...
+A class that is derived from another class is called a subclass or child class. the class from which the
+subclass is derived is called a superclass also a base class or a parent class, it is also called
+IS A RELATIONSHIP and the relationship is PARENT AND CHILD TYPE.
+
+4- Encapsulation..
+is like a capsule. The whole code and data is bounded together into a single unit.
+Variable and methods are defined inside one class like a capsule. Capsule = "Variables, Methods"
+1- better control of class attributes and methods.
+2- class attributes can be read only or write only.
+3- it makes Java code very flexible, it means the programmer can change one part of the code without effecting
+to the other part.
+To protect the data, variables must be private, and they can only AND always be accessed through methods.
+
+5- Abstract Classes..
+Agenda
+00  Interface...
+01  What an abstract class?...
+02  Features of Abstract Classes...
+03  Rules to declare Abstract Classes...
+04  Procedure to achieve Abstraction in Java...
+05  The Syntax of Abstract Classes, How it is implemented...
+06  Different examples for the Abstract classes in real world...
+07  We also going to learn Interface v/s Abstract classes the differences...
+08  We should know the Advantages of Abstract classes as well as the disadvantages...
+
+01  What an abstract class?
+    One of the keys to achieving oop approach and designing and software
+    Here the programmer tries to hide the importance of the implementation code which makes the software
+    run smoothly, most of the time the user doesn't interested to know how it is implemented,
+    through abstraction we can hide it. based on the requirement we can achieve is this with the help of
+    abstract classes or interfaces.
+
+    ABSTRACT CLASS IN JAVA, is considered as a template of methods and variables used in a program.
+    Abstract classes CANNOT BE INSTANTIATED DIRECTLY.
+
+03  Features of Abstract Classes..
+    TEMPLATE
+             The abstract class serves as a template in the sense that it provides a template or blueprint for
+             its subclasses. It defines the structure and common behavior that the subclasses should follow.
+    LOOS COUPLING
+             It is a procedure where the internal object gets the necessary methods or a different object
+             from external world.
+    CODE RE-USABILITY
+            Implementation of the abstract classes provide the developers with one the greatest feature
+            that saves time which is not other than the code re-usability.
+    ABSTRACTION
+            data abstraction is the process of hiding certain details from the user. showing only
+            essential to the users.
+    DYNAMIC METHOD RESOLUTION
+            It is a mechanism by which a call to the overridden method is resolve by run time
+
+04 Rules to Declare Abstract classes as follow..
+    .   The keyword "abstract" is mandatory.
+    .   Abstract classes cannot be instantiated.
+    .   An abstract class must have at least one abstract method.
+    .   An abstract class includes final methods.
+    .   An abstract class may also include non-abstract methods.
+    .   Abstract class can include constructors and static methods.
+
+05 Procedure to achieve Abstraction in Java
+    There are two different ways to achieve abstraction in java, Abstraction is one of the fundamentals of
+    Object Oriented Programming.
+    .   Using and interface
+    .   Using an Abstract class.
+
+05 The Syntax of Abstract Classes, How it is implemented
+    </>
+    abstract class ArashProduct{}
+    abstract void ArashProduct{}
+
+WHAT IS INTERFACE
+    Interface can be defined as a boundary between the method and the class implementing it. in Java,,
+    We use interface to achieve abstraction.
+    </> Abstraction can be achieved by following the syntax mentioned below.
+        interface ArashProduct{}
+
+
+
+
+
+6- Interface..
+    it is not a class but by default all the class and methods are public abstract as the example follow.
+    interface A
+    {
+        void show();
+        void config();
+    }
+    Now, how can we use the class and method above or how to instantiate tht?
+    same problem with abstract class with cannot instantiate them within themselves
+
+POLY-MORPHISM
+POLY = COMPILE TIME
+OVERLOADING
+
+Lets say you have a method that takes two parameters like add(int, int), int(int, int, int) both have the
+same name with different parameters, which method will execute first will decided by compile time
+
+MORPHISM = RUN TIME
+OVERRIDING
+
+that to tow different methods A and B same as above methods with different RUN TIME
+
+
+7- Multiple Inheritance using interface..
+
+8- ATM - Project..
+
+9- Calculator - Project
