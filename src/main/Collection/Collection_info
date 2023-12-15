@@ -1,0 +1,127 @@
+Collection frame work below,
+
+Interface
+Class
+
+Collection list or framework as follow;
+
+COLLECTION, is an interface
+
+1- list
+
+2- ArrayList
+3- LinkedList
+4- Stack
+5- Vector, less use now
+
+1- Set
+
+2- EnumSet, less use now
+3- HashSet
+4- LinkedHashSet
+5- TreeSet
+
+1- Queue
+
+2- ArrayDeque
+3- LinkedList
+4- PriorityQueue
+
+MAP Interface
+1- map
+2- HashMap
+3- TreeMap
+4- EnumMap, less use now
+5- LinkedHashMap
+6- WeakHashMap, less use now
+
+1- Iterator -> ListIterator less use now. Interface
+===========================================================
+1- ArrayList
+here we can define any number or strings and it doesn't has a fix size like normal array.
+methods we use as follow
+list.add() We can add in our array value.
+list.set() We can set value in specific position.
+list.get() We can get specific value in any position.
+list.remove() We can remove specific value.
+list.clear() We can remove all the value and make array empty.
+list.size() This will give us the size of the currently size of the array.
+list.remove(Integer.valueOf(100)); This will remove the value by it's defined value.
+list.contain() this will make sure if the specific value is present in the array.
+==============================================================
+2- Stack, this means last IN first OUT.
+Stack<String> animal = new Stack<>();
+1- animal.push() We are adding new value in the stack
+2- animal.pop() We are removing value for the array last element of the  array which also called first is first out
+3- animal.peek() it shows the last element on the top from the list.
+================================================================
+3- LinkedList, NOTE to better know how to list works we need to look at the Queue first....IMPORTANT!!!!!!!
+LINKEDlIST IS JUST WORKING AS ARRAYLIST.
+
+              Deletion<--|---|--|--|--|--|<--Addition
+                         front QUEUE rear
+The diagram above shows that the addition is appearing to the queue from the back with is rear and it gets out from front.
+You have two ways to implement this
+1- ArrayList
+2- LinkedList
+
+Here is what Queue interface offer us with the methods we can work on
+1- add() inserts the specified element into the queue. if the task is successful add()returns true, if not, throws exception.
+2- offer() inserts the specified element into the queue. if the task is successful add()returns true, if not false.
+3- element() Returns the head of the queue, throws exception if the queue is empty.
+4- peek() Returns the head of the queue. Returns null if the queue is empty.
+5- poll() Reruns and removed the head of the queue. Returns null if the queue is empty.
+=============================================================================
+Priority Queue. VERY IMPORTANT
+this means we are giving the element priority.
+
+Queue<Integer> peQue = new PriorityQueue<>(Comparator.reverseOrder());
+
+        peQue.offer(111);
+        peQue.offer(12);
+        peQue.offer(15);
+        peQue.offer(22);
+        System.out.println("peQue = " + peQue);
+
+        System.out.println(peQue.peek());
+
+    // by default the order to take out the element by its smaller size but we can also reverse the comparator
+    //by changing adding the comparator.reserveOrder() inside the PriorityQueue inter face parantheses.
+==============================================================================
+ArrayDeque..That means that you can take it out the element from front and rear depends on how you want to structure.
+Your can peek()it from both side.
+===================================================================================================
+3- HashSet
+duplicate elements are not allowed, YOU CAN USE ELEMENT ONLY ONCE.
+ public static void main(String[] args) {
+        Set<Integer> setElement = new HashSet<>();
+
+
+        setElement.add(100);
+        setElement.add(200);
+        setElement.add(300);
+        setElement.add(400);
+        setElement.add(500);
+
+        setElement.add(500);//Ah I cannot add duplicate element.
+
+        System.out.println(setElement);
+        System.out.println(setElement.contains((500)));
+
+        if(setElement.contains(100) == true){
+            System.out.println("The element is present ");
+        }else{
+            System.out.println("The element is not present");
+        }
+ =======================================================
+ MAP Key value Pairs, it is totally working different than collection.
+ Keys  -----  Values
+ us           USA
+ br           Brazil
+ es           Spain
+ afg          Afghanistan
+
+
+
+
+
